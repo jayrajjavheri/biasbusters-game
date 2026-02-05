@@ -41,14 +41,14 @@ if st.button(row["option3"]):
 # Result
 if st.session_state.answered:
     if st.session_state.result == "bias":
-        img = Image.open("images/Angry caricature.jpg")
+        img = Image.open("images/angry.jpg")
         st.image(img, width=250)
         msg = "Crowd is loud, but your brain should be louder!"
         st.error("🤦 Bias Detected: Herd Mentality")
         st.write("SuperStar R:", msg)
         speak(msg)
     else:
-        img = Image.open("images/Happy Carricature.jpg")
+        img = Image.open("images/happy.jpg")
         st.image(img, width=250)
         msg = "Smart move! Research always wins."
         st.success("✅ Good Decision!")
